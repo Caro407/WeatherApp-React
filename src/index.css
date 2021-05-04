@@ -1,13 +1,92 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h1 {
+  color: #1a64d6;
+  font-size: 34px;
+  margin-bottom: 0;
+}
+
+h2 {
+  padding-top: 20px;
+  margin-bottom: 0;
+  font-size: 18px;
+}
+
+p {
+  margin-top: 25px;
+  padding-bottom: 10px;
+}
+
+.title:first-of-type p {
+  margin-top: 10px;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.justify {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.margin-text {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.title {
+  font-size: 34px;
+}
+
+.size {
+  width: 400px;
+  padding-top: 0px;
+}
+
+.data-font {
+  font-family: monospace;
+  font-size: 18px;
+}
+
+.right-data {
+  font-weight: bold;
+}
+
+.button {
+  background-color: #1a64d6;
+  padding: 15px 25px;
+  color: white;
+  border-radius: 35px;
+  margin-top: 15px;
+  border-color: #1a64d6;
+  font-size: 16px;
+  font-family: Arial;
+  transition: background-color 200ms ease-out;
+}
+
+.signature {
+  font-family: monospace;
+  font-size: 15px;
+  color: grey;
+}
+
+button:hover {
+  background-color: white;
+  color: #1a64d6;
+  cursor: pointer;
+}
+
+.size:hover {
+  background-color: #ffffe6;
 }
