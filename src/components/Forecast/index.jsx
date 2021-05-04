@@ -1,7 +1,7 @@
 import React from 'react';
 import Day from './../Day'
 
-const Forecast = () => {
+const Forecast = (props) => {
   const [data, setData] = React.useState({days: [], isFetching: false});
 
   React.useEffect(() => {
@@ -21,6 +21,7 @@ const Forecast = () => {
 
   return (
     <div>
+      <p>{props.latitude} {props.longitude}</p>
       {data.days.map((dailyData) => (
         <Day data={dailyData} key={dailyData.datetime} />
       ))}
