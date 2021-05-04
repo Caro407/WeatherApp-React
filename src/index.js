@@ -16,7 +16,7 @@ const App = () => {
   return (
   <div>
     <h1>Weather Forecast</h1>
-    <Forecast latitude={geoloc.latitude} longitude={geoloc.longitude}/>
+    {(geoloc.latitude === 0 && geoloc.longitude === 0) ? <p>Hé accepte la géoloc</p> : <Forecast latitude={geoloc.latitude} longitude={geoloc.longitude}/>}
   </div>
   );
 };
