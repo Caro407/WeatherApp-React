@@ -8,7 +8,7 @@ const Forecast = (props) => {
     const fetchWeather = async () => {
       try {
         setData({days: [], isFetching: true});
-        const response = await fetch("https://api.weatherbit.io/v2.0/forecast/daily?key=d44035da864f4c23ac68b2fe314fb054&city=Paris&country=France");
+        const response = await fetch(`https://api.weatherbit.io/v2.0/forecast/daily?key=d44035da864f4c23ac68b2fe314fb054&lat=${props.latitude}&lon=${props.longitude}`);
         const forecast = await response.json();
         setData({days: forecast.data, isFetching: true});
       } catch (e) {
@@ -17,7 +17,7 @@ const Forecast = (props) => {
       }
     };
     fetchWeather();
-    }, []);
+  }, [props.latitude, props.longitude]);
 
   return (
     <div>
